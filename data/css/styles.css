@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "Manrope";
+    src: url("../fonts/static/Manrope-Regular.ttf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url("../fonts/RobotoMono-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ScopeOne';
+    src: url("../fonts/ScopeOne-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'ZCOOL XiaoWei';
+    src: url("../fonts/ZCOOLXiaoWei-Regular.ttf");
+}
+
+.spectrum {
+    background-image: url('../images/bg.png');
+    font-family: 'Montserrat';
+}
+
+.spectrum-Dialog{
+    margin: auto;
+}
+
+.title{
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.title-content{
+    font-size: small;
+    text-align: center;
+
+}
+
+body {
+    margin: 30px;
+    font-family: 'Montserrat';
+    content: '';
+    top: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    border: 2px solid #2c292d;
+    /* position: absolute; */
+    z-index: -1;
+}
+
+
+h1 {
+    font-family: 'ScopeOne';
+}
+
+
+.logo{
+    text-align: center;
+}
+
+.events li {
+  display: flex;
+}
+
+.events time {
+  position: relative;
+  color: #ccc;
+  width: 50px;
+  padding: 0 1.5em;  }
+
+.events time::after {
+   content: "";
+   position: absolute;
+   z-index: 2;
+   right: 0;
+   top: 0;
+   transform: translateX(50%);
+   border-radius: 50%;
+   background: #fff;
+   border: 1px #ccc solid;
+   width: .8em;
+   height: .8em;
+}
+
+
+.events span {
+  padding: 0 1.5em 1.5em 1.5em;
+  position: relative;
+  width: 400px;
+}
+
+.events span::before {
+   content: "";
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   height: 100%;
+   border-left: 1px #ccc solid;
+}
+
+.events strong {
+   display: block;
+   font-weight: bolder;
+}
+
+.events { margin: 1em; width: 95%; }
+.events,
+.events *::before,
+.events *::after { box-sizing: border-box; font-family: arial; }
+
+.buy{
+    margin: 30px;
+    font-family: 'ScopeOne';
+    text-align: center;
+    font-size: xxx-large;
+    border: 2px solid #2c292d;
+    padding: 5px;
+    line-height: 50px;
+}

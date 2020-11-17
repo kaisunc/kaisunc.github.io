@@ -1,0 +1,50 @@
+{
+  "name": "kaisunc.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaisunc/kaisunc.github.io.git"
+  },
+  "author": "kaisun chou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaisunc/kaisunc.github.io/issues"
+  },
+  "homepage": "https://github.com/kaisunc/kaisunc.github.io#readme",
+  "dependencies": {
+    "@spectrum-css/actionbar": "^3.0.0-beta.3",
+    "@spectrum-css/actiongroup": "^1.0.0-beta.2",
+    "@spectrum-css/alert": "^3.0.0-beta.3",
+    "@spectrum-css/button": "^3.0.0-beta.3",
+    "@spectrum-css/dialog": "^3.0.0-beta.3",
+    "@spectrum-css/icon": "^2.1.1",
+    "@spectrum-css/page": "^2.0.7",
+    "@spectrum-css/popover": "^3.0.0-beta.3",
+    "@spectrum-css/progressbar": "^1.0.0-beta.2",
+    "@spectrum-css/rating": "^2.0.7",
+    "@spectrum-css/rule": "^3.0.0-beta.3",
+    "@spectrum-css/slider": "^3.0.0-beta.2",
+    "@spectrum-css/steplist": "^3.0.0-beta.2",
+    "@spectrum-css/table": "^3.0.0-beta.3",
+    "@spectrum-css/toast": "^3.0.0-beta.3",
+    "@spectrum-css/tooltip": "^3.0.0-beta.2",
+    "@spectrum-css/treeview": "^3.0.0-beta.3",
+    "@spectrum-css/typography": "^2.1.3",
+    "@spectrum-css/underlay": "^2.0.7",
+    "@spectrum-css/vars": "^2.3.0",
+    "@types/node": "^14.14.7",
+    "animate.css": "^4.1.1",
+    "chartjs": "^0.3.24",
+    "csvtojson": "^2.0.10",
+    "loadicons": "^1.0.0",
+    "moment": "^2.29.1",
+    "node": "^15.2.0",
+    "software-license-key": "^1.0.0",
+    "typescript": "^4.0.5"
+  }
+}
