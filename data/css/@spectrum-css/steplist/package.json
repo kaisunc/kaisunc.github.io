@@ -1,0 +1,60 @@
+{
+  "_from": "@spectrum-css/steplist@^3.0.0-beta.2",
+  "_id": "@spectrum-css/steplist@3.0.0-beta.4",
+  "_inBundle": false,
+  "_integrity": "sha512-7CV7EIuuTEri5f5si6dF4/liQ0DVosanGpgSYfCAIDV/csLVrmaCUzI2U4SRXhB7bD0kq65DcvIWsNFeRhU7jQ==",
+  "_location": "/@spectrum-css/steplist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@spectrum-css/steplist@^3.0.0-beta.2",
+    "name": "@spectrum-css/steplist",
+    "escapedName": "@spectrum-css%2fsteplist",
+    "scope": "@spectrum-css",
+    "rawSpec": "^3.0.0-beta.2",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.0-beta.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@spectrum-css/steplist/-/steplist-3.0.0-beta.4.tgz",
+  "_shasum": "5b4e7485e033d13e95ec72ae58aca9c206c20969",
+  "_spec": "@spectrum-css/steplist@^3.0.0-beta.2",
+  "_where": "C:\\Users\\julio\\Dropbox\\Projects\\kaisunc.github.io",
+  "bugs": {
+    "url": "https://github.com/adobe/spectrum-css/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The Spectrum CSS steplist component",
+  "devDependencies": {
+    "@spectrum-css/component-builder": "^2.0.0-beta.0",
+    "@spectrum-css/icon": "^3.0.0-beta.1",
+    "@spectrum-css/tooltip": "^3.0.0-beta.4",
+    "@spectrum-css/vars": "^2.3.0",
+    "gulp": "^4.0.0"
+  },
+  "gitHead": "90d7cf94f07e5bbc1705c23f62b6c7c3f163194c",
+  "homepage": "https://opensource.adobe.com/spectrum-css/",
+  "license": "Apache-2.0",
+  "main": "dist/index-vars.css",
+  "name": "@spectrum-css/steplist",
+  "peerDependencies": {
+    "@spectrum-css/icon": "^3.0.0-beta.0",
+    "@spectrum-css/vars": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe/spectrum-css.git",
+    "directory": "components/steplist"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "3.0.0-beta.4"
+}

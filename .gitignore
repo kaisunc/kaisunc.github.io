@@ -40,6 +40,15 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+# node_modules/node/
+# node_modules/chartjs/
+# node_modules/moment/
+# node_modules/typeScript/
+# node_modules/csvtojson/
+# node_modules/loadicons/
+# node_modules/@types/node/
+# node_modules/animate.css/
+
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

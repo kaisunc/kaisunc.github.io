@@ -1,0 +1,58 @@
+{
+  "_from": "@spectrum-css/button@^3.0.0-beta.3",
+  "_id": "@spectrum-css/button@3.0.0-beta.5",
+  "_inBundle": false,
+  "_integrity": "sha512-z/5NWXZWhoZy5Go5SYwgfo6xcPCIZJPGjevIA9Q30/O+DcrJrwwt9iuMRCJYJ35Gs8mUAX1Oa650eBT7yoW1cQ==",
+  "_location": "/@spectrum-css/button",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@spectrum-css/button@^3.0.0-beta.3",
+    "name": "@spectrum-css/button",
+    "escapedName": "@spectrum-css%2fbutton",
+    "scope": "@spectrum-css",
+    "rawSpec": "^3.0.0-beta.3",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.0-beta.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@spectrum-css/button/-/button-3.0.0-beta.5.tgz",
+  "_shasum": "dd1cf1651c665d2d787fa18ef53cdc68cd625221",
+  "_spec": "@spectrum-css/button@^3.0.0-beta.3",
+  "_where": "C:\\Users\\julio\\Dropbox\\Projects\\kaisunc.github.io",
+  "bugs": {
+    "url": "https://github.com/adobe/spectrum-css/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The Spectrum CSS button component",
+  "devDependencies": {
+    "@spectrum-css/component-builder": "^2.0.0-beta.0",
+    "@spectrum-css/icon": "^3.0.0-beta.1",
+    "@spectrum-css/vars": "^2.3.0",
+    "gulp": "^4.0.0"
+  },
+  "gitHead": "90d7cf94f07e5bbc1705c23f62b6c7c3f163194c",
+  "homepage": "https://opensource.adobe.com/spectrum-css/",
+  "license": "Apache-2.0",
+  "main": "dist/index-vars.css",
+  "name": "@spectrum-css/button",
+  "peerDependencies": {
+    "@spectrum-css/vars": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe/spectrum-css.git",
+    "directory": "components/button"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "3.0.0-beta.5"
+}

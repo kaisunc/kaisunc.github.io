@@ -1,0 +1,60 @@
+{
+  "_from": "@spectrum-css/table@^3.0.0-beta.3",
+  "_id": "@spectrum-css/table@3.0.0-beta.5",
+  "_inBundle": false,
+  "_integrity": "sha512-hJwNPK2T7bz4mLMXSjeZN2X2RlRXoJIP6KJIsuky5s88VY5TUsqGvM7tnl7Vf8rLBQ6ZMcf/vVfDY1Oz6lnq2g==",
+  "_location": "/@spectrum-css/table",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@spectrum-css/table@^3.0.0-beta.3",
+    "name": "@spectrum-css/table",
+    "escapedName": "@spectrum-css%2ftable",
+    "scope": "@spectrum-css",
+    "rawSpec": "^3.0.0-beta.3",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.0-beta.3"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@spectrum-css/table/-/table-3.0.0-beta.5.tgz",
+  "_shasum": "92f0d98db2cf43cd523d9560ba6aca95650be8ee",
+  "_spec": "@spectrum-css/table@^3.0.0-beta.3",
+  "_where": "C:\\Users\\julio\\Dropbox\\Projects\\kaisunc.github.io",
+  "bugs": {
+    "url": "https://github.com/adobe/spectrum-css/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "The Spectrum CSS table component",
+  "devDependencies": {
+    "@spectrum-css/checkbox": "^3.0.0-beta.5",
+    "@spectrum-css/component-builder": "^2.0.0-beta.0",
+    "@spectrum-css/icon": "^3.0.0-beta.1",
+    "@spectrum-css/vars": "^2.3.0",
+    "gulp": "^4.0.0"
+  },
+  "gitHead": "90d7cf94f07e5bbc1705c23f62b6c7c3f163194c",
+  "homepage": "https://opensource.adobe.com/spectrum-css/",
+  "license": "Apache-2.0",
+  "main": "dist/index-vars.css",
+  "name": "@spectrum-css/table",
+  "peerDependencies": {
+    "@spectrum-css/icon": "^3.0.0-beta.0",
+    "@spectrum-css/vars": "^2.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adobe/spectrum-css.git",
+    "directory": "components/table"
+  },
+  "scripts": {
+    "build": "gulp"
+  },
+  "version": "3.0.0-beta.5"
+}

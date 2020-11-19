@@ -8,23 +8,10 @@
     <meta name="description" content="Vscode Vim Academy">
     <meta name="keywords" content="Vscode Vim Academy">
     <meta name="author" content="kaisunc">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/vars/dist/spectrum-global.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/vars/dist/spectrum-medium.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/vars/dist/spectrum-dark.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/page/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/typography/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/icon/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/table/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/rating/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/rule/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/dialog/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/button/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/tooltip/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/treeview/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/actionbar/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/actiongroup/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/popover/dist/index-vars.css">
-    <link rel="stylesheet" type="text/css" href="../../node_modules/@spectrum-css/progressbar/dist/index-vars.css">
+    <link rel="stylesheet" type="text/css" href="data/css/@spectrum-css/vars/dist/spectrum-global.css">
+    <link rel="stylesheet" type="text/css" href="data/css/@spectrum-css/vars/dist/spectrum-medium.css">
+    <link rel="stylesheet" type="text/css" href="data/css/@spectrum-css/vars/dist/spectrum-dark.css">
+    <link rel="stylesheet" type="text/css" href="data/css/@spectrum-css/dialog/dist/index-vars.css">
     <link rel="stylesheet" type="text/css" href="./data/css/styles.css">
 </head>
 
@@ -97,6 +84,13 @@
                         <li>
                             Trial Version: 50+ levels, enough to improve your code editing quality of life.
                             <div class='buy'>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <input type="hidden" name="cmd" value="_s-xclick">
+                                    <input type="hidden" name="hosted_button_id" value="7SQ5JH6B6MHFJ">
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/TW/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                </form>
+
                                 DONATE HERE
                             </div>
                         </li>
@@ -108,7 +102,20 @@
 
             </section>
         </div>
+        <button onclick='test()'></button>
     </div>
+    <script>
+        function test() {
+            console.log('testing');
+            var xhr = new XMLHttpRequest();
+            var url = 'https://8ccd8c02ffb7.ngrok.io/ipn'
+            xhr.open("POST", url, true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.send(JSON.stringify({
+                test: 'something'
+            }));
+        }
+    </script>
 </body>
 
 </html>
