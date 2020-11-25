@@ -31,10 +31,10 @@
     </div>
     <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
         <div class="spectrum-Dialog-grid">
-            <h1 class="spectrum-Dialog-heading">Learn to dance with your cursor</h1>
+            <h1 class="spectrum-Dialog-heading">Edit code like a pro</h1>
             <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider">
             <section class="spectrum-Dialog-content">
-                and edit code like a pro. <b>Vscode Vim Academy</b> has been designed with learning the
+                and learn to dance with your cursor. <b>Vscode Vim Academy</b> has been designed with learning the
                 <b>language of vim</b> in mind.
             </section>
         </div>
@@ -90,13 +90,42 @@
                         <li>
                             Trial Version: 50+ levels, enough to improve your code editing quality of life.
                             <div class='buy'>
-                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                    <input type="hidden" name="cmd" value="_s-xclick">
-                                    <input type="hidden" name="hosted_button_id" value="7SQ5JH6B6MHFJ">
-                                    <input type="image" src="https://www.paypalobjects.com/en_US/TW/i/btn/btn_buynowCC_LG_wCUP.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-                                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-                                </form>
+                                <div id="smart-button-container">
+                                    <div style="text-align: center;">
+                                        <div id="paypal-button-container"></div>
+                                    </div>
+                                </div>
+                                <script src="https://www.paypal.com/sdk/js?client-id=Ac2MZNdEqux9Vj518KvNUioox6BzDlAVZ6Dj8Sl1_Ysdavi6eKUAE5EoQAc3Pme_C6-OEOQSju0I6g_c&currency=USD" data-sdk-integration-source="button-factory"></script>
+                                <script>
+                                    function initPayPalButton() {
+                                        paypal.Buttons({
+                                            style: {
+                                                shape: 'pill',
+                                                color: 'white',
+                                                layout: 'horizontal',
+                                                label: 'buynow',
 
+                                            },
+
+                                            createOrder: function (data, actions) {
+                                                return actions.order.create({
+                                                    purchase_units: [{ "description": "vva", "amount": { "currency_code": "USD", "value": 20 } }]
+                                                });
+                                            },
+
+                                            onApprove: function (data, actions) {
+                                                return actions.order.capture().then(function (details) {
+                                                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                                                });
+                                            },
+
+                                            onError: function (err) {
+                                                console.log(err);
+                                            }
+                                        }).render('#paypal-button-container');
+                                    }
+                                    initPayPalButton();
+                                </script>
                                 DONATE HERE
                             </div>
                         </li>
