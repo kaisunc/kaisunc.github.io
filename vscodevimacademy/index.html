@@ -1,4 +1,4 @@
-<html class="spectrum spectrum--light spectrum--medium" lang="en" dir="ltr">
+<html class="spectrum spectrum--dark spectrum--medium" lang="en" dir="ltr">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,23 +16,31 @@
 </head>
 
 <body>
-    <div class="spectrum--large spectrum">
-        <div class="spectrum-Dialog spectrum-Dialog--large" role="dialog" tabindex="-1" aria-modal="true" style="margin-top: 100px">
-            <div class="spectrum-Dialog-grid">
-                <div></div>
-                <div class="logo">
-                    <img class="spectrum-Asset-image vvaLogo" src="./data/images/logo.png">
-                </div>
-                <h1 class="spectrum-Dialog-heading title">VSCODE VIM ACADEMY</h1>
-                <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider">
-                <section class="spectrum-Dialog-content title-content">LEARN VSCODE & VIM FOR PROFESSIONAL DEVELOPERS</section>
+    <div class="spectrum--large spectrum" style="margin-top: 50px">
+        <div class="spectrum-Dialog spectrum-Dialog--large">
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/stream.svg">
+            <h1 class="spectrum-Dialog-heading title">VSCODE VIM ACADEMY</h1>
+            <!-- <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider"> -->
+            <section class="spectrum-Dialog-content title-content">CODE FAST, CODE STRONG </section>
+
+            <div id="smart-button-container" style="margin-top: 25px;">
+                <div id="paypal-button-container" style="width: 150px; margin: auto"></div>
             </div>
+        </div>
+    </div>
+
+    <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
+        <div class="spectrum-Dialog-grid">
+            <h1 class="spectrum-Dialog-heading">Are you at the top of your game?</h1>
+            <!-- <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider"> -->
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/line01.svg">
+            <section class="spectrum-Dialog-content">attack your code, FAST, and STRONG.</section>
         </div>
     </div>
     <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
         <div class="spectrum-Dialog-grid">
             <h1 class="spectrum-Dialog-heading">Edit code like a pro</h1>
-            <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider">
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/line01.svg">
             <section class="spectrum-Dialog-content">
                 and learn to dance with your cursor. <b>Vscode Vim Academy</b> has been designed with learning the
                 <b>language of vim</b> in mind.
@@ -41,8 +49,17 @@
     </div>
     <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
         <div class="spectrum-Dialog-grid">
+            <h1 class="spectrum-Dialog-heading">Free Trial</h1>
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/line01.svg">
+            <section class="spectrum-Dialog-content">
+                50+ Levels to practice for FREE!
+            </section>
+        </div>
+    </div>
+    <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
+        <div class="spectrum-Dialog-grid">
             <h1 class="spectrum-Dialog-heading">Taking it one step at a time</h1>
-            <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider">
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/line01.svg">
             <section class="spectrum-Dialog-content">
                 <ul class="events">
                     <li>
@@ -75,69 +92,50 @@
     <div class="spectrum-Dialog spectrum-Dialog--medium" role="dialog" tabindex="-1" aria-modal="true">
         <div class="spectrum-Dialog-grid">
             <h1 class="spectrum-Dialog-heading">You are ready to grow.</h1>
-            <hr class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider">
+            <img class="spectrum-Divider spectrum-Divider--medium spectrum-Divider--horizontal spectrum-Dialog-divider" src="./data/images/line01.svg">
             <section class="spectrum-Dialog-content">
-                <div>
-                    Vscode Vim Academy comes in two versions,
-                    <ul>
-                        <li>
-                            Full Version, 100+ levels
-                            <div class='buy'>
-                                BUY LICENSE
-
-                            </div>
-                        </li>
-                        <li>
-                            Trial Version: 50+ levels, enough to improve your code editing quality of life.
-                            <div class='buy'>
-                                <div id="smart-button-container">
-                                    <div style="text-align: center;">
-                                        <div id="paypal-button-container"></div>
-                                    </div>
-                                </div>
-                                <script src="https://www.paypal.com/sdk/js?client-id=Ac2MZNdEqux9Vj518KvNUioox6BzDlAVZ6Dj8Sl1_Ysdavi6eKUAE5EoQAc3Pme_C6-OEOQSju0I6g_c&currency=USD" data-sdk-integration-source="button-factory"></script>
-                                <script>
-                                    function initPayPalButton() {
-                                        paypal.Buttons({
-                                            style: {
-                                                shape: 'pill',
-                                                color: 'white',
-                                                layout: 'horizontal',
-                                                label: 'buynow',
-
-                                            },
-
-                                            createOrder: function (data, actions) {
-                                                return actions.order.create({
-                                                    purchase_units: [{ "description": "vva", "amount": { "currency_code": "USD", "value": 20 } }]
-                                                });
-                                            },
-
-                                            onApprove: function (data, actions) {
-                                                return actions.order.capture().then(function (details) {
-                                                    alert('Transaction completed by ' + details.payer.name.given_name + '!');
-                                                });
-                                            },
-
-                                            onError: function (err) {
-                                                console.log(err);
-                                            }
-                                        }).render('#paypal-button-container');
-                                    }
-                                    initPayPalButton();
-                                </script>
-                                DONATE HERE
-                            </div>
-                        </li>
-
-                    </ul>
+                Try or Buy the VSCODE extension NOW.
+                <div id="smart-button-container" style="margin-top: 50px;">
+                    <div style="text-align: center;">
+                        <div id="paypal-button-container-bottom"></div>
+                    </div>
                 </div>
-
-
-
             </section>
         </div>
     </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=Ac2MZNdEqux9Vj518KvNUioox6BzDlAVZ6Dj8Sl1_Ysdavi6eKUAE5EoQAc3Pme_C6-OEOQSju0I6g_c&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+        function initPayPalButton(bid) {
+            paypal.Buttons({
+                style: {
+                    shape: 'pill',
+                    color: 'gold',
+                    layout: 'horizontal',
+                    label: 'buynow',
+
+                },
+
+                createOrder: function (data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{ "description": "vva", "amount": { "currency_code": "USD", "value": 20 } }]
+                    });
+                },
+
+                onApprove: function (data, actions) {
+                    return actions.order.capture().then(function (details) {
+                        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+                    });
+                },
+
+                onError: function (err) {
+                    console.log(err);
+                }
+            }).render(bid);
+        }
+
+        initPayPalButton('#paypal-button-container');
+        initPayPalButton('#paypal-button-container-bottom');
+    </script>
 </body>
 
 </html>

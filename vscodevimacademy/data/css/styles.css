@@ -37,17 +37,35 @@
 }
 
 .spectrum-Dialog{
+    display: block;
     margin: auto;
+}
+
+.spectrum-Dialog-heading{
+    color: #ddd;
+}
+
+.spectrum-Dialog-content{
+    color: #888;
+}
+
+.spectrum-Dialog-grid{
+    display: block;
 }
 
 .title{
     font-size: xxx-large;
+    font-weight: lighter;
     text-align: center;
+    margin: auto;
+    color: #eee;
 }
 
 .title-content{
     font-size: small;
     text-align: center;
+    margin: auto;
+    color: #888;
 
 }
 
@@ -62,11 +80,13 @@ body {
     border: 2px solid #2c292d;
     /* position: absolute; */
     z-index: -1;
+    background-color: #2c292d;
 }
 
 
 h1 {
     font-family: 'ScopeOne';
+    margin: auto;
 }
 
 
@@ -125,7 +145,8 @@ h1 {
 .events *::after { box-sizing: border-box; font-family: arial; }
 
 .buy{
-    margin: 30px;
+    /* width: 30px; */
+    margin: 5px;
     font-family: 'ScopeOne';
     text-align: center;
     font-size: xxx-large;
