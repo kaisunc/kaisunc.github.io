@@ -103,7 +103,8 @@
             </section>
         </div>
     </div>
-    <script src="https://www.paypal.com/sdk/js?client-id=Ac2MZNdEqux9Vj518KvNUioox6BzDlAVZ6Dj8Sl1_Ysdavi6eKUAE5EoQAc3Pme_C6-OEOQSju0I6g_c&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=Ac2MZNdEqux9Vj518KvNUioox6BzDlAVZ6Dj8Sl1_Ysdavi6eKUAE5EoQAc3Pme_C6-OEOQSju0I6g_c&currency=USD" data-sdk-integration-source="button-factory"></script> -->
+    <script src="https://www.paypal.com/sdk/js?client-id=ARtg7ttiM015DFKCdcdQI38aeGP8qMLeTwSPKfH1CDOJKsofneyNO4K8t5S7FnuSVxI_pV3xYzwQZePf&currency=USD" data-sdk-integration-source="button-factory"></script>
     <script>
         function initPayPalButton(bid) {
             paypal.Buttons({
@@ -117,7 +118,7 @@
 
                 createOrder: function (data, actions) {
                     return actions.order.create({
-                        purchase_units: [{ "description": "vva", "amount": { "currency_code": "USD", "value": 20 } }]
+                        purchase_units: [{ "description": "Vscode Vim Academy License", "amount": { "currency_code": "USD", "value": 1 } }]
                     });
                 },
 
