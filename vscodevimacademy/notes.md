@@ -7,4 +7,3 @@ You run millions of servers, billions of vms, and trillions of bots at your fing
 You already know vscode and vim?
 
 Learn vscode and vim with VSCODE VIM ACADEMEY
-
